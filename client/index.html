@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Two-Player Puzzle (30 tiles)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Puzzle Game</h1>
+
+    <div id="top">
+      <div id="leftInfo">
+        <div>Left player time: <span id="leftTime">60</span>s</div>
+        <div>Left score: <span id="leftScore">0</span></div>
+      </div>
+
+      <div>
+        <div>Your side: <span id="mySideLabel">assigning...</span></div>
+        <div>Turn: <span id="turnLabel">left</span></div>
+
+        <button id="startBtn" disabled>Start Game</button>
+      </div>
+
+      <div id="rightInfo">
+        <div>Right player time: <span id="rightTime">60</span>s</div>
+        <div>Right score: <span id="rightScore">0</span></div>
+      </div>
+    </div>
+
+    <p id="message">
+      Waiting for side assignment...
+    </p>
+
+    <div id="game">
+      <canvas id="leftPool" width="140" height="600"></canvas>
+      <canvas id="board" width="500" height="600"></canvas>
+      <canvas id="rightPool" width="140" height="600"></canvas>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
