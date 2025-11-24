@@ -92,7 +92,7 @@ imageSources.forEach((src, index) => {
 //WEBSOCKET SETUP: assigning sides
 
 const playerId = Math.random().toString(36).slice(2);
-const ws = new WebSocket("ws://localhost:3000");
+const ws = new WebSocket("wss://puzzlegame-0m5l.onrender.com");
 
 // Telling the server player(s) joined (so it can count players)
 ws.onopen = () => {
