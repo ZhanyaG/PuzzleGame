@@ -72,7 +72,7 @@ wss.on('connection', (ws) => {
       return;
     }
 
-    // Ignore "join" messages (they are only used to say "I'm here")
+  
     if (msg.type === "join") {
       return;
     }
